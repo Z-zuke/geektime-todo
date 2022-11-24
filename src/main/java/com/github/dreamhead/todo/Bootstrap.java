@@ -10,7 +10,6 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 @SpringBootApplication
 @EnableJpaRepositories("com.github.dreamhead.todo.api.repository")
 @EntityScan("com.github.dreamhead.todo.core")
-@ComponentScan("com.github.dreamhead.todo")
 public class Bootstrap {
     private static ConfigurableApplicationContext context;
 
