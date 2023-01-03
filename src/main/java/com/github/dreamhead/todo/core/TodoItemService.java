@@ -2,7 +2,6 @@ package com.github.dreamhead.todo.core;
 
 import com.google.common.collect.Streams;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -15,7 +14,7 @@ public class TodoItemService {
     private final TodoItemRepository repository;
 
     @Autowired
-    public TodoItemService(@Qualifier("todoItemRepository") final TodoItemRepository repository) {
+    public TodoItemService(final TodoItemRepository repository) {
         this.repository = repository;
     }
 
